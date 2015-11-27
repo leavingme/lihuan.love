@@ -222,10 +222,11 @@
                     ( new Function("return " + scriptCode) )()();
                 }
                 else {
-                    script = document.head.appendChild(document.createElement("script"));
-                    script.src = window.contentPath + "firstpage.min.js";
+                    
                 }
             }, 0);
+            script = document.head.appendChild(document.createElement("script"));
+            script.src = window.contentPath + "firstpage.min.js";
         }
     })();
 
